@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "37b11c1b0ec226a2e13e3be29cbf57a8"
+name = "myapptest10-reordering"
+handle = "myapptest10-reordering"
+application_url = "https://experienced-davidson-stanley-illinois.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "hdlm2.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_delivery_customizations,read_products,write_delivery_customizations,write_products"
+
+[auth]
+redirect_urls = [
+  "https://experienced-davidson-stanley-illinois.trycloudflare.com/auth/callback",
+  "https://experienced-davidson-stanley-illinois.trycloudflare.com/auth/shopify/callback",
+  "https://experienced-davidson-stanley-illinois.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
